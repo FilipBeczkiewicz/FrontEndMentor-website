@@ -1,0 +1,84 @@
+.boost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: hsl(257, 26, 25);
+    position: relative;
+    height: 290px;
+    overflow: hidden;
+    margin-top: 7rem;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .boost__deskptop {
+        display: none;
+    }
+
+    &__content {
+        z-index: 100;
+        text-align: center;
+
+        & p {
+            font-size: 1.8rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        & .boost__button {
+            background: hsl(180, 66%, 49%);
+            border: none;
+            padding: .8rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            color: white;
+            margin-top: .8rem;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            &:hover {
+                background: hsl(180, 50%, 58%);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+
+    .boost {
+        margin-top: 10rem;
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+        }
+
+        .boost__deskptop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: inline;
+        }
+
+        &__content {
+            & p {
+                font-size: 2rem;
+            }
+
+            & .boost__button {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+
+}

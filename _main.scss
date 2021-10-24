@@ -1,0 +1,112 @@
+.main {
+    width: 100%;
+    margin-top: 8rem;
+    background: hsl(230,25,95);
+}
+
+.short {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background: hsl(257, 27%, 26%);
+    padding: 1rem;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(-50%);
+    &__input,
+    &__button {
+        padding: .7rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 1.05rem;
+        z-index: 10;
+    }
+
+    &__input {
+        margin-bottom: 1rem;
+        color: hsl(0, 0%, 53%);
+    }
+
+    &__button {
+        background: hsl(180, 66%, 49%);
+        color: white;
+        font-weight: 600;
+        transition: background .3s;
+        &:hover {
+            background: hsl(180, 60%, 58%);
+        }
+    }
+
+    &__background {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__background2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 668px) {
+
+    .short {
+        width:90%;
+        margin: 0 auto;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 2.5rem;
+        gap: 4rem;
+        &__input,
+        &__button {
+            padding: .7rem 1.5rem;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            font-size: 1.05rem;
+            z-index: 10;
+        }
+    
+        &__input {
+            margin-bottom: 0;
+            color: hsl(0, 0%, 53%);
+            flex: 1;
+            
+        }
+    
+        &__button {
+            background: hsl(180, 66%, 49%);
+            color: white;
+            font-weight: 600;
+            
+        }
+    
+        &__background2 {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    
+        &__background {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .short {
+        width: 80%;
+    }
+
+}

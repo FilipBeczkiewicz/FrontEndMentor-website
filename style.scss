@@ -1,0 +1,16 @@
+@import '_nav';
+@import '_header';
+@import '_main';
+@import '_cards';
+@import '_boost';
+@import '_footer';
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
